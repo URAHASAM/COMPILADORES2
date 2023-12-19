@@ -1,0 +1,58 @@
+exitoso 1
+
+{
+  int x;
+  float y;
+  x = 5;
+  y = 3.14;
+  if (x > 0) {
+    y = y * x;
+  }
+}
+
+exitoso 2 
+{
+  int a[10];
+  float b;
+  b = 2.5;
+  if (a[0] == 5) {
+    b = b + a[1];
+  }
+}
+
+
+
+error 1
+
+{
+  int x;
+  float y;
+  x = 5;
+  y = 3.14;
+  if (x > 0)
+    y = y * x;
+  else  
+    y = y - x;
+}
+
+
+
+error 2 
+{
+  int x;
+  float y;
+  x = 5;
+  y = 3.14;
+  if (x > 0) {
+    y = y * x;
+  else  // Error de sintaxis, debería ser 'else'
+    y = y - x;
+}
+
+
+
+
+
+
+
+
